@@ -282,6 +282,7 @@
     const dot = $('.cursor__dot');
     const ring = $('.cursor__ring');
     const label = $('.cursor__label');
+    const badgeText = $('.cursor__badge textPath');
     const dx = gsap.quickTo(dot, 'x', { duration: 0.1, ease: 'power3' });
     const dy = gsap.quickTo(dot, 'y', { duration: 0.1, ease: 'power3' });
     const rx = gsap.quickTo(ring, 'x', { duration: 0.5, ease: 'power3' });
@@ -291,9 +292,10 @@
     addEventListener('pointermove', e => { dx(e.clientX); dy(e.clientY); rx(e.clientX); ry(e.clientY); }, { passive: true });
     document.addEventListener('pointerover', e => {
       const t = e.target.closest('[data-cursor], [data-cursor-hide], a, button, .step, .tools li');
-      cur.classList.remove('is-label', 'is-hover', 'is-hidden');
+      cur.classList.remove('is-label', 'is-badge', 'is-hover', 'is-hidden');
       if (!t) return;
       if (t.hasAttribute('data-cursor-hide')) cur.classList.add('is-hidden');
+      else if (t.dataset.cursor && t.hasAttribute('data-cursor-badge')) { badgeText.textContent = `${t.dataset.cursor} • `.repeat(2); cur.classList.add('is-label', 'is-badge'); }
       else if (t.dataset.cursor) { label.textContent = t.dataset.cursor; cur.classList.add('is-label'); }
       else cur.classList.add('is-hover');
     });

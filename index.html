@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=26">
+  <link rel="stylesheet" href="assets/css/style.css?v=28">
 </head>
 <body class="is-loading">
 
@@ -43,7 +43,16 @@
 
   <!-- Cursor -->
   <div class="cursor" aria-hidden="true">
-    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__ring">
+      <span class="cursor__label"></span>
+      <span class="cursor__badge">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="cursor-circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#cursor-circle"></textPath></text>
+        </svg>
+        <span class="cursor__badge-photo"><img src="assets/img/avatar.jpg?v=2" alt=""></span>
+      </span>
+    </div>
     <div class="cursor__dot"></div>
   </div>
 
@@ -322,7 +331,7 @@
       </div>
       <ul class="services__list">
         <li class="service">
-          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити" data-cursor-badge>
             <span class="service__num">01</span>
             <span class="service__name">UX/UI Design</span>
             <span class="service__desc">Сайти, лендинги та мобільні додатки —<br>від дослідження до прототипу</span>
@@ -330,7 +339,7 @@
           </a>
         </li>
         <li class="service">
-          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити" data-cursor-badge>
             <span class="service__num">02</span>
             <span class="service__name">Graphic Design</span>
             <span class="service__desc">Інфографіка для маркетплейсів та креативи<br>для соцмереж</span>
@@ -338,7 +347,7 @@
           </a>
         </li>
         <li class="service">
-          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити" data-cursor-badge>
             <span class="service__num">03</span>
             <span class="service__name">Game Design</span>
             <span class="service__desc">Інтерфейси мобільних ігор для Android<br>за гайдлайнами Material Design</span>
@@ -346,7 +355,7 @@
           </a>
         </li>
         <li class="service">
-          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити" data-cursor-badge>
             <span class="service__num">04</span>
             <span class="service__name">Digital Design</span>
             <span class="service__desc">Банери, презентації та цифрові матеріали<br>для бізнесу</span>
@@ -354,7 +363,7 @@
           </a>
         </li>
         <li class="service">
-          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити" data-cursor-badge>
             <span class="service__num">05</span>
             <span class="service__name">Creative Design</span>
             <span class="service__desc">Нешаблонні візуальні концепції, що виділяють серед конкурентів</span>
@@ -437,6 +446,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="assets/js/main.js?v=16"></script>
+  <script src="assets/js/main.js?v=17"></script>
 </body>
 </html>
