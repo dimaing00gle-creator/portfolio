@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Дмитро Руденко — UX/UI дизайнер</title>
+  <meta name="description" content="Дмитро Руденко — UX/UI дизайнер з Києва. Поєдную аналітику та естетику для зростання ваших конверсій. Сайти, додатки, мобільні ігри, креативи.">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:title" content="Дмитро Руденко — UX/UI дизайнер">
+  <meta property="og:description" content="Поєдную аналітику та естетику для зростання ваших конверсій.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dima-rudenko-portfolio.vercel.app/">
+  <meta property="og:image" content="https://dima-rudenko-portfolio.vercel.app/assets/img/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Перший екран сайту: UX/UI Designer — Дмитро Руденко">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d0d0d'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23c8ff3c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;600&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=22">
+</head>
+<body class="is-loading">
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__top">
+        <span>Дмитро Руденко</span>
+        <span>Портфоліо ®2026</span>
+      </div>
+      <div class="preloader__word">
+        <span class="preloader__mask"><span>Аналітика</span></span>
+        <span class="preloader__mask"><span>+ естетика</span></span>
+      </div>
+      <div class="preloader__bottom">
+        <div class="preloader__bar"><span></span></div>
+        <span class="preloader__count">000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#hero" class="nav__logo" data-magnetic>
+      <span class="nav__logo-dot"></span>
+      Дмитро Руденко
+    </a>
+    <nav class="nav__links" aria-label="Основна навігація">
+      <a href="#work" class="roll"><span data-text="Роботи">Роботи</span></a>
+      <a href="#about" class="roll"><span data-text="Про мене">Про мене</span></a>
+      <a href="#services" class="roll"><span data-text="Послуги">Послуги</span></a>
+      <a href="#contact" class="roll"><span data-text="Контакти">Контакти</span></a>
+    </nav>
+    <div class="nav__right">
+      <div class="msg">
+        <button type="button" class="btn btn--acc msg__btn" aria-expanded="false" aria-controls="msg-menu" data-magnetic>
+          <span class="roll"><span data-text="Написати">Написати</span></span>
+        </button>
+        <div class="msg__menu" id="msg-menu" role="menu" aria-label="Де написати">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" class="msg__item" role="menuitem" style="--c: #2aabee">
+            <i></i><span><b>Telegram</b><small>@dimaformz</small></span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+          <a href="viber://chat?number=%2B380969795452" class="msg__item" role="menuitem" style="--c: #7360f2">
+            <i></i><span><b>Viber</b><small>+380 96 97 95 452</small></span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+          <a href="https://wa.me/380969795452" target="_blank" rel="noopener" class="msg__item" role="menuitem" style="--c: #25d366">
+            <i></i><span><b>WhatsApp</b><small>+380 96 97 95 452</small></span>
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="nav__burger" aria-label="Меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#work">Роботи</a>
+      <a href="#about">Про мене</a>
+      <a href="#services">Послуги</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="https://t.me/dimaformz" target="_blank" rel="noopener">Telegram</a>
+      <a href="viber://chat?number=%2B380969795452">Viber</a>
+      <a href="https://wa.me/380969795452" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.behance.net/dima_rudenok" target="_blank" rel="noopener">Behance</a>
+      <a href="https://www.linkedin.com/in/dima-rudenko-a1ab6b24a/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="hero__meta">
+        <span class="hero__status"><i></i>Відкритий до нових проєктів</span>
+        <span class="hide-sm">Kyiv, Ukraine</span>
+        <span>®2026</span>
+      </div>
+
+      <h1 class="hero__title" aria-label="UX/UI Designer, Claude Code">
+        <span class="hero__row hero__row--1">
+          <span class="hero__head">
+            <span class="hero__line" data-split>UX<em>/</em>UI</span>
+            <span class="hero__stack"><i></i>Claude Code</span>
+          </span>
+          <span class="hero__badge" aria-hidden="true">
+            <span class="hero__badge-ring">
+              <svg viewBox="0 0 200 200">
+                <defs><path id="circle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+                <text><textPath href="#circle">UX/UI designer • Dima Rudenko • Kyiv 2026 •</textPath></text>
+              </svg>
+            </span>
+            <span class="hero__badge-photo"><img src="assets/img/avatar.jpg?v=2" alt=""></span>
+          </span>
+        </span>
+        <span class="hero__row hero__row--2">
+          <span class="hero__line" data-split>Designer</span>
+        </span>
+      </h1>
+
+      <div class="hero__bottom">
+        <p class="hero__lead" data-words>Привіт! <span class="acc">Дайте офер.</span><br>Ну, <span class="nowrap">будь ласка.</span></p>
+        <a href="#work" class="hero__scroll">
+          <span>Скрольте</span>
+          <span class="hero__scroll-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee marquee--acc" data-marquee data-speed="28" aria-label="Так дасте офер чи ні?">
+      <div class="marquee__track">
+        <span>Так дасте офер чи ні?</span><i>✦</i>
+        <span>Так дасте офер чи ні?</span><i>✦</i>
+        <span>Так дасте офер чи ні?</span><i>✦</i>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="sec-head">
+        <p class="eyebrow"><span>01</span> Портфоліо</p>
+        <h2 class="sec-title" data-reveal>Вибрані <span class="outline">роботи</span> <sup>(06)</sup></h2>
+        <p class="sec-lead" data-words>Розробляю рішення, які приносять користь: зростання конверсій, економія бюджету, лояльність клієнтів</p>
+      </div>
+
+      <div class="work__stack">
+        <article class="card" style="--i:0">
+          <a class="card__inner" href="#solarize" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">01</span>
+              <h3 class="card__title">Solarize<span>: Renewable energy</span></h3>
+              <div class="card__tags"><span>Redesign</span><span>2025</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/solarize.png" alt="Редизайн сайту Solarize" width="1900" height="1500" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+
+        <article class="card" style="--i:1">
+          <a class="card__inner" href="#hunter" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">02</span>
+              <h3 class="card__title">Hunter<span>: Food delivery</span></h3>
+              <div class="card__tags"><span>Application</span><span>2026</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/hunter.png" alt="Мобільний додаток Hunter" width="2210" height="1879" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+
+        <article class="card" style="--i:2">
+          <a class="card__inner" href="#ai-for-business" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">03</span>
+              <h3 class="card__title">AI for business</h3>
+              <div class="card__tags"><span>Landing page</span><span>2025</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/ai-business.png" alt="Лендинг вебінару AI for business" width="1600" height="1200" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+
+        <article class="card" style="--i:3">
+          <a class="card__inner" href="#photographer" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">04</span>
+              <h3 class="card__title">Photographer</h3>
+              <div class="card__tags"><span>Portfolio website</span><span>2025</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/photographer.png" alt="Сайт-портфоліо фотографа" width="1600" height="1200" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+
+        <article class="card" style="--i:4">
+          <a class="card__inner" href="#e-commerce" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">05</span>
+              <h3 class="card__title">Graphic design</h3>
+              <div class="card__tags"><span>E-commerce</span><span>2024</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/ecommerce.png" alt="Інфографіка для маркетплейсів" width="1600" height="1200" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+
+        <article class="card" style="--i:5">
+          <a class="card__inner" href="#game" data-cursor="Відкрити">
+            <div class="card__head">
+              <span class="card__num">06</span>
+              <h3 class="card__title">Mobile game</h3>
+              <div class="card__tags"><span>Game for Android</span><span>2026</span></div>
+              <span class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+            </div>
+            <div class="card__media"><div class="card__zoom"><img src="assets/img/game.png" alt="Дизайн мобільної гри для Android" width="1400" height="1000" loading="lazy" decoding="async"></div></div>
+            <div class="card__shade"></div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="sec-head">
+        <p class="eyebrow"><span>02</span> Про мене</p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__photo-wrap">
+          <figure class="about__photo">
+            <img src="assets/img/portrait-green.jpg" alt="Дмитро Руденко" width="1200" height="1600" loading="lazy" decoding="async">
+          </figure>
+          <span class="about__photo-tag">Kyiv · UA</span>
+        </div>
+
+        <div class="about__body">
+          <h2 class="about__hello" data-reveal>Hello there<br>I’m <span class="acc">Dima <span class="about__last">Rudenko</span></span></h2>
+
+          <p class="about__big" data-scrub>3+ роки досвіду в проєктуванні сайтів, додатків, простих мобільних ігор, креативів для соцмереж та маркетплейсів. 20+ комерційних проєктів.</p>
+
+          <div class="about__cols">
+            <div>
+              <h3 class="mini-title">UX</h3>
+              <p>Дослідження, які приносять результат: аналітика, тестування гіпотез, побудова user flow та wireframes, виявлення проблем на етапі розробки.</p>
+            </div>
+            <div>
+              <h3 class="mini-title">UI</h3>
+              <p>Розробка візуального стилю: графіка, шрифти та кольори, прототипування, UI Kit.</p>
+            </div>
+          </div>
+
+          <div class="tools">
+            <p class="mini-title">Інструменти</p>
+            <ul>
+              <li>Figma</li><li>Framer</li><li>Tilda</li><li>Canva</li><li>Photoshop</li><li>HTML / CSS</li><li>Claude Code</li>
+            </ul>
+            <p class="tools__note">Англійська — Intermediate (B1)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="process__pin">
+        <div class="process__head">
+          <p class="eyebrow"><span>03</span> Процес</p>
+          <h2 class="sec-title" data-reveal>Як я <span class="outline">працюю</span></h2>
+        </div>
+        <div class="process__track">
+          <article class="step">
+            <span class="step__num">01</span>
+            <h3>Аналітика</h3>
+            <p>Аналізую ринок, конкурентів і референси, щоб знайти сильні та слабкі сторони користувацького досвіду.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">02</span>
+            <h3>Гіпотези</h3>
+            <p>Обговорюю з бізнесом варіанти, що виділять серед конкурентів, формулюю гіпотези та тестую їх на користувачах.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">03</span>
+            <h3>User flow & Wireframes</h3>
+            <p>Будую логіку продукту та мінімізую кількість кроків до цільової дії.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">04</span>
+            <h3>UI-дизайн</h3>
+            <p>Графіка, шрифти та кольори. Чіткі акценти, видимість стану системи та більше повітря.</p>
+          </article>
+          <article class="step">
+            <span class="step__num">05</span>
+            <h3>Прототип & UI Kit</h3>
+            <p>Інтерактивні прототипи та чіткий UI Kit для передачі в розробку. Супровід на етапі розробки.</p>
+          </article>
+        </div>
+        <div class="process__bar"><span></span></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="sec-head">
+        <p class="eyebrow"><span>04</span> Послуги</p>
+        <h2 class="sec-title" data-reveal>Що я <span class="outline">роблю</span></h2>
+      </div>
+      <ul class="services__list">
+        <li class="service">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+            <span class="service__num">01</span>
+            <span class="service__name">UX/UI Design</span>
+            <span class="service__desc">Сайти, лендинги та мобільні додатки — від дослідження до прототипу</span>
+            <span class="service__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+          </a>
+        </li>
+        <li class="service">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+            <span class="service__num">02</span>
+            <span class="service__name">Graphic Design</span>
+            <span class="service__desc">Інфографіка для маркетплейсів та креативи для соцмереж</span>
+            <span class="service__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+          </a>
+        </li>
+        <li class="service">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+            <span class="service__num">03</span>
+            <span class="service__name">Game Design</span>
+            <span class="service__desc">Інтерфейси мобільних ігор для Android за гайдлайнами Material Design</span>
+            <span class="service__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+          </a>
+        </li>
+        <li class="service">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+            <span class="service__num">04</span>
+            <span class="service__name">Digital Design</span>
+            <span class="service__desc">Банери, презентації та цифрові матеріали для бізнесу</span>
+            <span class="service__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+          </a>
+        </li>
+        <li class="service">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" data-cursor="Обговорити">
+            <span class="service__num">05</span>
+            <span class="service__name">Creative Design</span>
+            <span class="service__desc">Нешаблонні візуальні концепції, що виділяють серед конкурентів</span>
+            <span class="service__arrow"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="clients" aria-label="Клієнти">
+      <p class="eyebrow clients__eyebrow"><span>05</span> Клієнти</p>
+      <div class="marquee marquee--big" data-marquee data-speed="40">
+        <div class="marquee__track">
+          <span>Traffbraza</span><i>✦</i><span>Mobile Zona</span><i>✦</i><span>Франс.уа</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee marquee--big marquee--outline" data-marquee data-speed="40" data-dir="right">
+        <div class="marquee__track">
+          <span>Mastukraine</span><i>✦</i><span>Hunter</span><i>✦</i><span>Freelance</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="contact__q" data-words>Вам сподобалося побачене?</p>
+      <h2 class="contact__title" aria-label="Напишіть мені">
+        <span class="contact__line" data-split>Напишіть</span>
+        <span class="contact__row">
+          <a href="https://t.me/dimaformz" target="_blank" rel="noopener" class="contact__cta" data-magnetic="0.4" data-cursor-hide>
+            <span class="contact__cta-in">
+              <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+              Telegram
+            </span>
+          </a>
+          <span class="contact__line" data-split>мені</span>
+        </span>
+      </h2>
+
+      <div class="contact__grid">
+        <div>
+          <p class="mini-title">Пошта</p>
+          <a href="mailto:dima.in.g00gle@gmail.com" class="link-u">dima.in.g00gle@gmail.com</a>
+        </div>
+        <div>
+          <p class="mini-title">Телефон</p>
+          <a href="tel:+380969795452" class="link-u">+380 96 97 95 452</a>
+        </div>
+        <div>
+          <p class="mini-title">Соцмережі</p>
+          <a href="https://www.behance.net/dima_rudenok" target="_blank" rel="noopener" class="link-u">Behance</a>
+          <a href="https://www.linkedin.com/in/dima-rudenko-a1ab6b24a/" target="_blank" rel="noopener" class="link-u">LinkedIn</a>
+        </div>
+        <div>
+          <p class="mini-title">Локація</p>
+          <p>Ukraine, Kyiv<br><span class="muted">Зараз <b data-clock>--:--</b></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>2026 ® Dmitry Rudenko</span>
+    <span class="hide-sm">UX/UI Designer</span>
+    <a href="#hero" class="roll footer__top"><span data-text="Нагору ↑">Нагору ↑</span></a>
+  </footer>
+
+  <!-- Case study overlay -->
+  <div class="case" role="dialog" aria-modal="true" aria-labelledby="case-title" aria-hidden="true">
+    <div class="case__scroll" data-lenis-prevent>
+      <button class="case__close" data-magnetic aria-label="Закрити проєкт">
+        <span>Закрити</span>
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="case__content"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js?v=14"></script>
+</body>
+</html>
