@@ -370,7 +370,7 @@ a:hover .roll > span, a.roll:hover > span { transform: translateY(-100%); }
 .service { border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
 .service a {
   position: relative; z-index: 1;
-  display: grid; grid-template-columns: 80px 1.2fr 1fr auto; align-items: center; gap: 24px;
+  display: grid; grid-template-columns: 80px minmax(0, 1.2fr) minmax(0, 1fr) auto; align-items: center; gap: 24px;
   padding: clamp(24px, 3vw, 44px) var(--g);
   transition: color .5s var(--ease-out);
 }
@@ -382,9 +382,9 @@ a:hover .roll > span, a.roll:hover > span { transform: translateY(-100%); }
 .service:hover a { color: var(--ink); }
 .service__num { font-size: 14px; font-weight: 500; color: var(--muted); transition: color .5s; }
 .service:hover .service__num, .service:hover .service__desc { color: var(--ink); }
-.service__name { font-family: var(--f-display); font-weight: 600; font-size: clamp(28px, 4.6vw, 80px); line-height: 1; letter-spacing: -.045em; text-transform: uppercase; transition: transform .7s var(--ease-out); }
+.service__name { font-family: var(--f-display); font-weight: 600; font-size: clamp(28px, 4.3vw, 80px); line-height: 1; letter-spacing: -.045em; text-transform: uppercase; white-space: nowrap; transition: transform .7s var(--ease-out); }
 .service:hover .service__name { transform: translateX(20px); }
-.service__desc { color: var(--muted); max-width: 380px; transition: color .5s; }
+.service__desc { color: var(--muted); max-width: 380px; margin-left: 80px; transition: color .5s; }
 .service__arrow { width: 56px; aspect-ratio: 1; border-radius: 50%; border: 1px solid currentColor; display: grid; place-items: center; transition: transform .6s var(--ease-out), background-color .4s, color .4s; }
 .service__arrow svg { width: 40%; }
 .service:hover .service__arrow { transform: rotate(45deg); background: var(--ink); color: var(--acc); border-color: var(--ink); }
@@ -506,6 +506,7 @@ a:hover .roll > span, a.roll:hover > span { transform: translateY(-100%); }
 
 @media (max-width: 600px) {
   .hide-sm { display: none; }
+  .service__name { white-space: normal; }
   .hero__meta { font-size: 11px; }
   .hero__title { margin: calc(var(--vh) * 6) 0; font-size: 13.8vw; }
   .hero__row--1 { flex-direction: column-reverse; align-items: flex-start; gap: 24px; }
