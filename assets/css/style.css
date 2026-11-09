@@ -525,6 +525,8 @@ a:hover .roll > span, a.roll:hover > span { transform: translateY(-100%); }
   .contact__title { font-size: 13.4vw; }
   .about__cols { grid-template-columns: 1fr; gap: 24px; }
   .contact__row { justify-content: space-between; }
+  /* Drop the 110px circle so its top lines up with the cap height of «мені» (title is 13.4vw) */
+  .contact__cta { position: relative; top: calc(55px - 4.85vw); }
   .contact__grid { grid-template-columns: 1fr; gap: 24px; }
   .case__gallery { grid-template-columns: 1fr; }
   .case__gallery figure.is-wide { grid-column: auto; }
