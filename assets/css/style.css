@@ -113,7 +113,7 @@ svg path { fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: 
   color: var(--ink); opacity: 0; transform: scale(.6); transition: opacity .3s, transform .45s var(--ease-out);
 }
 .cursor.is-hover .cursor__ring { width: 64px; height: 64px; margin: -32px 0 0 -32px; background: rgb(var(--paper-rgb) / .08); border-color: transparent; }
-.cursor.is-label .cursor__ring { width: 116px; height: 116px; margin: -58px 0 0 -58px; background: var(--acc); border-color: transparent; }
+.cursor.is-label .cursor__ring { width: 116px; height: 116px; margin: -58px 0 0 -58px; background: var(--acc); border-color: var(--ink); }
 .cursor.is-label .cursor__label { opacity: 1; transform: scale(1); }
 .cursor.is-label .cursor__dot, .cursor.is-hidden .cursor__dot { opacity: 0; }
 .cursor.is-hidden .cursor__ring { opacity: 0; }
