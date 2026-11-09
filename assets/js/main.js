@@ -83,6 +83,9 @@
     gsap.ticker.add(t => lenis.raf(t * 1000));
     gsap.ticker.lagSmoothing(0);
   }
+  // The page always starts at the hero: no scroll restored on reload, no jump to a section hash
+  ScrollTrigger.clearScrollMemory('manual');
+  const toTop = () => { scrollTo(0, 0); lenis?.scrollTo(0, { immediate: true }); };
   const scrollToEl = el => {
     if (lenis) lenis.scrollTo(el, { duration: 1.6, easing: t => 1 - Math.pow(1 - t, 4) });
     else el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
@@ -246,7 +249,9 @@
 
   function preloader() {
     const pre = $('.preloader');
+    toTop();
     const done = () => {
+      toTop();
       document.body.classList.remove('is-loading');
       lenis?.start();
       handleInitialHash();
@@ -669,13 +674,8 @@
   function handleInitialHash() {
     const id = decodeURIComponent(location.hash.slice(1));
     if (!id) return;
-    if (findProject(id)) {
-      history.replaceState(null, '', location.pathname + location.search);
-      openCase(id);
-    } else {
-      const el = document.getElementById(id);
-      if (el) scrollToEl(el);
-    }
+    history.replaceState(null, '', location.pathname + location.search);
+    if (findProject(id)) openCase(id);
   }
 
   /* ------------------------------------------------------------------
@@ -701,7 +701,10 @@
   /* ------------------------------------------------------------------
      Boot
   ------------------------------------------------------------------ */
-  addEventListener('load', () => ScrollTrigger.refresh());
+  addEventListener('load', () => {
+    if (document.body.classList.contains('is-loading')) toTop();
+    ScrollTrigger.refresh();
+  });
   (document.fonts ? Promise.race([document.fonts.ready, new Promise(r => setTimeout(r, 1500))]) : Promise.resolve())
     .then(() => { ScrollTrigger.refresh(); preloader(); });
 })();
